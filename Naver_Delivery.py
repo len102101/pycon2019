@@ -16,7 +16,9 @@ labels = table.find_elements_by_tag_name('tr')
 datas = []
 
 for i in labels:
-    datas.append(i.text.split())
+    datas.append(i.text.split()[:3])
 
+column = datas.pop(0)
 frame = pd.DataFrame(datas)
+frame.columns = column
 frame.to_excel('NaverDelivery.xlsx', encoding='cp949')

@@ -1,11 +1,6 @@
 from selenium import webdriver
 import urllib.request as urllib
 
-options = webdriver.ChromeOptions()
-options.add_argument('headless')
-options.add_argument("disable-gpu")
-
-#driver = webdriver.Chrome('./chromedriver', chrome_options=options)
 driver = webdriver.Chrome('./chromedriver')
 driver.get('https://www.cjlogistics.com/ko/tool/parcel/tracking')
 

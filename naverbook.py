@@ -22,3 +22,5 @@ driver.close()
 data = pd.DataFrame(DataList)
 data.columns = ['title', 'writer', 'publication', 'date']
 data.to_excel('NaverBookRank.xlsx', encoding='cp949')
+
+driver.find_xp
